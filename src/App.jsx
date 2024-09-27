@@ -5,7 +5,6 @@ import Navbar from './comman/navbar/Navbar'; // Import the Navbar component
 function App() {
   return (
     <div className="text-white">
-      hii
       <Navbar /> {/* Rendering the Navbar component */}
     </div>
   );
