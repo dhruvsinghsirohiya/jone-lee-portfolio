@@ -2,6 +2,10 @@
     background: linear-gradient(145deg, #1e2024, #23272b);
 }
 
+.buy-btn:hover{
+    background: linear-gradient(to right bottom, #212428, #16181c);
+}
+
 /* Add this to your style.css */
 @keyframes slideInFromRight {
     0% {
