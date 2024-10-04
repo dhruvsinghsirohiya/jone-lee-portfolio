@@ -8,7 +8,7 @@ const HomeSection = () => {
     return (
         <div id='#home' className='xl:w-[80%] mt-0 lg:mt-12 sm:w-[90%] w-[95%] md:w-[85%] lg:w-[90%] flex justify-center lg:items-start items-center flex-col lg:flex-row lg:justify-between mx-auto py-10'>
             <div className='lg:w-[50%] w-full lg:mt-0 order-2 lg:order-1'>
-                <h2 className='uppercase tracking-[3px] text-center lg:text-left text-[14px] text-[#c4cfde] mb-4'>Welcome to my world</h2>
+                <h4 className='uppercase tracking-[3px] text-center lg:text-left text-[14px] text-[#c4cfde] mb-4'>Welcome to my world</h4>
                 <h1 className='text-[35px] sm:text-[45px] md:text-[50px] lg:text-[55px] text-center lg:text-left xl:text-[60px] mb-4 leading-[50px] lg:leading-[65px] xl:leading-[75px] text-white font-bold'>
                 Hi, I’m <span className='text-[#ff014f] '>Jone Lee</span>
                  <span className=''> a Developer.</span>
@@ -18,7 +18,7 @@ const HomeSection = () => {
                 </p>
                 <div className='sm:mt-12 mt-10 md:mt-16 lg:mt-16 xl:mt-36 px-2 flex flex-col justify-center items-center lg:items-start lg:flex-row lg:justify-start lg:gap-12 xl:gap-20 text-[#c4cfde]'>
                     <div>
-                        <h6 className='mb-4 uppercase text-center lg:text-left text-[14px]tracking-[3px] '>find with me</h6>
+                        <h6 className='mb-4 uppercase text-center lg:text-left text-[14px] tracking-[3px] '>find with me</h6>
                         <div className='flex gap-5 text-[20px]'>
                         <a href="" target='_blank' title='Facbook'>
                         <FiFacebook className='w-[60px]  rounded-lg cursor-pointer  home-icon-btn duration-[400]  h-[60px] p-5'/>
@@ -32,7 +32,7 @@ const HomeSection = () => {
                         </div>
                     </div>
                     <div className='mt-10 lg:mt-0'>
-                        <h6 className='mb-4 uppercase text-center lg:text-left text-[14px]tracking-[3px] '>best skill on</h6>
+                        <h6 className='mb-4 uppercase text-center lg:text-left text-[14px] tracking-[3px] '>best skill on</h6>
                         <div className='flex gap-5 text-[20px]'>
                         <a href="" target='_blank' title='Figma Design'>
                         <FiFigma className='w-[60px]  rounded-lg cursor-pointer  home-icon-btn duration-[400]  h-[60px] p-5'/>
