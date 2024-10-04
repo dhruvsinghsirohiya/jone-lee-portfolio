@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./comman/navbar/Navbar";
-import HomeSection from "./Page/HomeSection";
+import HomeSection from "./homePage/HomeSection";
 
 const Main = () => {
   return (

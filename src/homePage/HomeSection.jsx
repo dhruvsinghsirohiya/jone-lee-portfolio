@@ -2,11 +2,11 @@ import React from 'react';
 import { FaCode, FaInstagram } from 'react-icons/fa';
 import { FiFacebook, FiFigma, FiLinkedin } from 'react-icons/fi';
 import { SiAdobe } from 'react-icons/si';
-import joneLee from "./allImg/banner-01.png";
+import joneLee from "./homeAllImg/banner-01.png";
 import "./style.css";
 const HomeSection = () => {
     return (
-        <div id='#home' className='xl:w-[80%] mt-0 lg:mt-12 sm:w-[90%] w-[95%] md:w-[85%] lg:w-[90%] flex justify-center lg:items-start items-center flex-col lg:flex-row lg:justify-between mx-auto py-10'>
+        <div id='#home' className='xl:w-[90%] border-b border-black mt-0 lg:mt-12 sm:w-[90%] w-[95%] md:w-[85%] lg:w-[90%] flex justify-center lg:items-start items-center flex-col lg:flex-row lg:justify-between mx-auto py-10'>
             <div className='lg:w-[50%] w-full lg:mt-0 order-2 lg:order-1'>
                 <h4 className='uppercase tracking-[3px] text-center lg:text-left text-[14px] text-[#c4cfde] mb-4'>Welcome to my world</h4>
                 <h1 className='text-[35px] sm:text-[45px] md:text-[50px] lg:text-[55px] text-center lg:text-left xl:text-[60px] mb-4 leading-[50px] lg:leading-[65px] xl:leading-[75px] text-white font-bold'>
