@@ -6,8 +6,8 @@ import joneLee from "./homeAllImg/banner-01.png";
 import "./style.css";
 const HomeSection = () => {
     return (
-        <div id='#home' className='xl:w-[90%] border-b border-black mt-0 lg:mt-12 sm:w-[90%] w-[95%] md:w-[85%] lg:w-[90%] flex justify-center lg:items-start items-center flex-col lg:flex-row lg:justify-between mx-auto py-10'>
-            <div className='lg:w-[50%] w-full lg:mt-0 order-2 lg:order-1'>
+        <div id='#home' className='border-b border-black mt-0 lg:mt-12 sm:w-[90%] w-[95%] md:w-[85%] lg:w-[90%] flex justify-center items-center flex-col lg:flex-row gap-5 lg:gap-36 mx-auto py-10'>
+            <div className='lg:w-[45%] mt-10 lg:mt-0 w-full order-2 lg:order-1'>
                 <h4 className='uppercase tracking-[3px] text-center lg:text-left text-[14px] text-[#c4cfde] mb-4'>Welcome to my world</h4>
                 <h1 className='text-[35px] sm:text-[45px] md:text-[50px] lg:text-[55px] text-center lg:text-left xl:text-[60px] mb-4 leading-[50px] lg:leading-[65px] xl:leading-[75px] text-white font-bold'>
                 Hi, I’m <span className='text-[#ff014f] '>Jone Lee</span>
@@ -47,10 +47,8 @@ const HomeSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:w-[50%] w-[80%] mb-14 lg:mb-0 mt-0 order-1 lg:order-2 lg:relative lg:h-[75vh] xl:h-[90vh] lg:px-20 lg:py-10'>
-                <div className='w-full lg:block hidden h-full shadow-3xl home-icon-btn'>
-                </div>
-                <img src={joneLee} className='lg:absolute bottom-0 lg:bottom-10 w-full lg:w-[65%] xl:w-[70%]' alt="" />
+            <div className='w-full px-4 pt-4 cursor-pointer lg:px-0 lg:pt-0 lg:w-[35%] lg:h-[70vh] shadow-3xl home-icon-btn order-1 duration-500 lg:order-2 lg:relative'>
+                <img src={joneLee} className='lg:absolute h-full lg:h-auto bottom-0 w-full' alt="" />
             </div>
         </div>
     );
