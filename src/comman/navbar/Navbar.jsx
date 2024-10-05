@@ -13,7 +13,7 @@ const handleToggle = () => {
     setToggle(!toggle);
 }
   return ( // Adding the return statement
-    <div id="home" className="lg:w-[95%] z-[9999] px-2 lg:px-0 relative flex justify-between items-center mx-auto text-white py-4 lg:py-6 ">
+    <div className="lg:w-[95%] z-[9999] px-2 lg:px-0 relative flex justify-between items-center mx-auto text-white py-4 lg:py-6 ">
         <img src={logo} className='h-[55px] cursor-pointer lg:h-[70px]' alt="" />
         <ul className={`hidden lg:flex text-[#c4cfde] justify-start text-[13px] gap-8 items-center uppercase`}>
             <li className=':hover:text-white cursor-pointer duration-200'><a href="#home">Home</a></li>
