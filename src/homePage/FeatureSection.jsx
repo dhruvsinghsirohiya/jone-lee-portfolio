@@ -57,7 +57,7 @@ const FeatureSection = () => {
   };
 
   return (
-    <div className="w-[90%] py-20 mx-auto">
+    <div id="features" className="w-[90%] py-20 mx-auto">
       <h6 className="text-[#ff014f] text-[14px] uppercase tracking-[2px]">
         Features
       </h6>
