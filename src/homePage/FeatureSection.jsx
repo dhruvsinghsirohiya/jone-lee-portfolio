@@ -61,7 +61,7 @@ const FeatureSection = () => {
       <h6 className="text-[#ff014f] text-[14px] uppercase tracking-[2px]">
         Features
       </h6>
-      <h1 className="text-[40px] md:text-[60px] font-[700] text-[#c4cfde]">
+      <h1 className="text-[40px] md:text-[50px] lg:text-[60px] font-[700] text-[#c4cfde]">
         What I Do
       </h1>
       <div className="w-full my-8 flex-wrap gap-6 md:flex justify-between">
