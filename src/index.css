@@ -6,11 +6,9 @@
 
 *{
   scroll-behavior: smooth;
+  font-family: Montserrat;
 }
 
 body{
   background: #212428;
-  font-family: Montserrat;
 }
-
-
