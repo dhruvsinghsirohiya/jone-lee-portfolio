@@ -151,7 +151,7 @@ const PortfolioSection = () => {
 
             <div
               onClick={closeModal}
-              className=" p-3 port-click-overlay-bg rounded-full text-white absolute right-[1%] text-[20px] md:text-[25px] top-[1%] md:top-[2%]"
+              className=" p-3 port-click-overlay-bg cursor-pointer rounded-full text-white absolute right-[1%] text-[20px] md:text-[25px] top-[1%] md:top-[2%]"
             >
               <IoMdClose />
             </div>
