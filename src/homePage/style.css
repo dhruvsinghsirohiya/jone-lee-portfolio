@@ -1,24 +1,25 @@
-.home-icon-btn{
-    background: linear-gradient(145deg, #1e2024, #23272b);
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+.home-icon-btn {
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
-.home-icon-btn:hover{
-    background: linear-gradient(to right bottom, #212428, #16181c);
+.home-icon-btn:hover {
+  background: linear-gradient(to right bottom, #212428, #16181c);
 }
-
 
 .portfolio-img {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .portfolio-img img {
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .home-icon-btn:hover .portfolio-img img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-  
 
-
+.port-click-overlay-bg{
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}

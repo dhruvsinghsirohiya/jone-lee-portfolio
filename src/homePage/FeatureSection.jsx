@@ -86,7 +86,7 @@ const FeatureSection = () => {
       </div>
 
       {selectedFeature && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-[999]">
           <div className="bg-white p-4 md:p-8 rounded-lg w-3/4 md:w-1/2">
             <h2 className="md:text-xl text-[18px] font-bold text-[#ff014f]">
               {selectedFeature.title}
