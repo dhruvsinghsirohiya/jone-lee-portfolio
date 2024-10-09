@@ -64,7 +64,7 @@ const Clients = () => {
       category: "Python",
     },
   ];
-  
+
   const filteredClients =
     selectedCategory === "All"
       ? allClients
@@ -72,16 +72,18 @@ const Clients = () => {
 
   return (
     <div id="clients" className="w-[90%] py-5 mx-auto text-white">
-      <h6 className="text-[#ff014f] text-[14px] uppercase tracking-[2px]">
+      <h6 className="text-[#ff014f] text-center md:text-left text-[14px] uppercase tracking-[2px]">
         Popular Clients
       </h6>
-      <h1 className="text-[20px] md:text-[40px] py-2 lg:py-0 lg:text-[60px] font-[700] text-[#c4cfde]">Awesome Clients</h1>
+      <h1 className="text-2xl md:text-[40px] text-center md:text-left lg:leading-[70px] py-2 lg:py-0 lg:text-[60px] font-[700] text-[#c4cfde]">
+        Awesome Clients
+      </h1>
       <div className="md:flex justify-between">
-        <div className="md:w-[30%] w-full py-2 md:py-8">
+        <div className="md:w-1/4 w-full py-2 md:py-8">
           <ul className="flex flex-col">
             <li
               onClick={() => setSelectedCategory("All")}
-              className={`py-4 md:p-4 text-[16px] xl:text-xl font-medium cursor-pointer ${
+              className={`py-4 md:pt-2  text-center md:text-left md:ps-4 text-[16px] xl:text-xl font-medium cursor-pointer ${
                 selectedCategory === "All" ? "text-[#ff014f]" : ""
               }`}
             >
@@ -91,7 +93,7 @@ const Clients = () => {
               <li
                 key={index}
                 onClick={() => setSelectedCategory(category.name)}
-                className={` py-4 md:p-4 text-[16px] lg:text-xl font-medium cursor-pointer ${
+                className={` py-4 text-center md:text-left md:p-4 text-[16px] lg:text-xl font-medium cursor-pointer ${
                   selectedCategory === category.name ? "text-[#ff014f]" : ""
                 }`}
               >
@@ -100,35 +102,36 @@ const Clients = () => {
             ))}
           </ul>
         </div>
-        <div className="w-full md:w-[70%] py-4 md:py-8 md:flex flex-wrap gap-6">
-          <h1 className="w-full text-[20px] md:text-[25px] lg:text-4xl font-bold mb-8">
+        <div className="w-full md:w-3/4 py-4 md:py-8">
+          <h1 className="w-full text-[20px] text-center md:text-left md:text-[25px] lg:text-4xl font-bold mb-10 md:mb-4">
             {selectedCategory === "All"
               ? "All Clients"
               : selectedCategory + " Clients"}
           </h1>
-
-          {filteredClients.map((client, index) => (
-            <div
-              key={index}
-              className="home-icon-btn cursor-pointer w-full md:w-[30%] bg-gray-800 rounded-lg shadow-lg flex flex-col mb-5 md:mb-0 items-center justify-center"
-            >
-              <div className="mt-10 mb-6">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="w-20 h-20"
-                />
+          <div className="w-full py-4 md:py-8 md:flex flex-wrap gap-4 lg:gap-6">
+            {filteredClients.map((client, index) => (
+              <div
+                key={index}
+                className="home-icon-btn cursor-pointer w-full md:w-[30%] bg-gray-800 rounded-lg shadow-lg flex flex-col mb-5 md:mb-0 items-center justify-center"
+              >
+                <div className="mt-10 mb-6">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="w-20 h-20"
+                  />
+                </div>
+                <h3 className="text-lg border-t border-gray-500 w-full py-4 text-center mt-4 font-semibold">
+                  {client.name}
+                </h3>
               </div>
-              <h3 className="text-lg border-t border-gray-500 w-full py-4 text-center mt-4 font-semibold">
-                {client.name}
-              </h3>
-            </div>
-          ))}
-          {filteredClients.length === 0 && (
-            <p className="w-full text-xl text-center">
-              No clients available for this category.
-            </p>
-          )}
+            ))}
+            {filteredClients.length === 0 && (
+              <p className="w-full text-xl text-center">
+                No clients available for this category.
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>

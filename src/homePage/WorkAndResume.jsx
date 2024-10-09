@@ -63,7 +63,7 @@ const WorkAndResume = () => {
   ];
 
   return (
-    <div id="resume" className="py-20 text-white w-[90%] mx-auto">
+    <div id="resume" className="pt-20 pb-10 text-white w-[90%] mx-auto">
       <a
         href="Resume.pdf"
         download={"Resume.pdf"}
