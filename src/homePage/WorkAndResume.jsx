@@ -6,40 +6,41 @@ const WorkAndResume = () => {
     {
       title: "Secondary Education",
       year: "2018",
-      college: "Zenith International School",
-      description: "Passed 10th with 85%",
+      college: "Zenith Int. School",
+      description: "10th: 85%",
     },
     {
       title: "Senior Secondary Education",
       year: "2020",
-      college: "Pinnacle High Academy",
-      description: "Passed 12th with 92%",
+      college: "Pinnacle High",
+      description: "12th: 92%",
     },
     {
-      title: "Bachelor of Technology",
+      title: "B.Tech",
       year: "2024",
-      college: "Avalon Institute of Technology",
+      college: "Avalon Institute",
       description: "...",
     },
     {
-      title: "Diploma in Web Development",
+      title: "Diploma in Web Dev",
       year: "2021",
-      college: "CyberTech Institute",
-      description: "Received Web Development Diploma from CyberTech",
+      college: "CyberTech Inst.",
+      description: "Web Dev Diploma.",
     },
     {
-      title: "Full Stack Development Course",
+      title: "Full Stack Course",
       year: "2022",
-      college: "CodeMasters Academy",
-      description: "Completed MERN Stack certification from CodeMasters",
+      college: "CodeMasters",
+      description: "Completed MERN cert.",
     },
     {
-      title: "Internship at Future Innovations Ltd",
+      title: "Internship",
       year: "2022",
-      college: "Future Innovations Ltd",
-      description: "6-month internship at Future Innovations Ltd.",
+      college: "Future Innovations",
+      description: "6-month internship.",
     },
   ];
+  
 
   const softwareSkills = [
     { skillName: "HTML5", skillGrowth: "90%", skillColor: "#03c04a" },

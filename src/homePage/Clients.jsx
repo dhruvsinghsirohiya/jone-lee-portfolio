@@ -71,17 +71,17 @@ const Clients = () => {
       : allClients.filter((client) => client.category === selectedCategory);
 
   return (
-    <div className="w-[90%] mx-auto text-white">
+    <div id="clients" className="w-[90%] py-5 mx-auto text-white">
       <h6 className="text-[#ff014f] text-[14px] uppercase tracking-[2px]">
         Popular Clients
       </h6>
-      <h1 className="text-[60px] font-[700] text-[#c4cfde]">Awesome Clients</h1>
-      <div className="flex">
-        <div className="w-1/4 py-8">
+      <h1 className="text-[20px] md:text-[40px] py-2 lg:py-0 lg:text-[60px] font-[700] text-[#c4cfde]">Awesome Clients</h1>
+      <div className="md:flex justify-between">
+        <div className="md:w-[30%] w-full py-2 md:py-8">
           <ul className="flex flex-col">
             <li
               onClick={() => setSelectedCategory("All")}
-              className={`p-4 text-xl font-medium cursor-pointer ${
+              className={`py-4 md:p-4 text-[16px] xl:text-xl font-medium cursor-pointer ${
                 selectedCategory === "All" ? "text-[#ff014f]" : ""
               }`}
             >
@@ -91,7 +91,7 @@ const Clients = () => {
               <li
                 key={index}
                 onClick={() => setSelectedCategory(category.name)}
-                className={`p-4 text-xl font-medium cursor-pointer ${
+                className={` py-4 md:p-4 text-[16px] lg:text-xl font-medium cursor-pointer ${
                   selectedCategory === category.name ? "text-[#ff014f]" : ""
                 }`}
               >
@@ -100,8 +100,8 @@ const Clients = () => {
             ))}
           </ul>
         </div>
-        <div className="w-3/4 p-8 flex flex-wrap gap-6">
-          <h1 className="w-full text-4xl font-bold mb-8">
+        <div className="w-full md:w-[70%] py-4 md:py-8 md:flex flex-wrap gap-6">
+          <h1 className="w-full text-[20px] md:text-[25px] lg:text-4xl font-bold mb-8">
             {selectedCategory === "All"
               ? "All Clients"
               : selectedCategory + " Clients"}
@@ -110,7 +110,7 @@ const Clients = () => {
           {filteredClients.map((client, index) => (
             <div
               key={index}
-              className="home-icon-btn cursor-pointer w-[30%] bg-gray-800 rounded-lg shadow-lg flex flex-col items-center justify-center"
+              className="home-icon-btn cursor-pointer w-full md:w-[30%] bg-gray-800 rounded-lg shadow-lg flex flex-col mb-5 md:mb-0 items-center justify-center"
             >
               <div className="mt-10 mb-6">
                 <img
@@ -119,7 +119,7 @@ const Clients = () => {
                   className="w-20 h-20"
                 />
               </div>
-              <h3 className="text-lg border-t w-full py-4 text-center mt-4 font-semibold">
+              <h3 className="text-lg border-t border-gray-500 w-full py-4 text-center mt-4 font-semibold">
                 {client.name}
               </h3>
             </div>
