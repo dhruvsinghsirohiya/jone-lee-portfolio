@@ -40,7 +40,6 @@ const WorkAndResume = () => {
       description: "6-month internship.",
     },
   ];
-  
 
   const softwareSkills = [
     { skillName: "HTML5", skillGrowth: "90%", skillColor: "#03c04a" },
@@ -55,33 +54,24 @@ const WorkAndResume = () => {
     { skillName: "Node JS", skillGrowth: "60%", skillColor: "#fff70d" },
     { skillName: "Mongo DB", skillGrowth: "60%", skillColor: "#fff70d" },
     { skillName: "Express JS", skillGrowth: "60%", skillColor: "#fff70d" },
-    {
-      skillName: "Photoshop CC & CS6",
-      skillGrowth: "40%",
-      skillColor: "yellow",
-    },
   ];
 
   return (
     <div id="resume" className="pt-20 pb-10 text-white w-[90%] mx-auto">
-      <a
-        href="Resume.pdf"
-        download={"Resume.pdf"}
-        className="px-8 home-banner cursor-pointer banner-shadow duration-300 hover:border-white border-[#ff014f] border py-2.5"
-      >
+      <h6 className="text-[#ff014f] text-[14px] uppercase tracking-[2px]">
         Resume
-      </a>
+      </h6>
       <div className="lg:flex gap-4 justify-between ">
         {/* Education & Experience Section */}
         <div className="lg:w-[50%] w-full py-4">
-          <div className="py-6 scale-100 mb-8 hover:scale-105 duration-200 cursor-pointer text-[#ff014f] text-[22px] md:text-[30px] xl:text-[40px] font-semibold ">
+          <h2 className="py-6 mb-8 cursor-pointer text-[22px] md:text-[30px] xl:text-[40px] font-semibold ">
             Education & Experience
-          </div>
+          </h2>
           {educationExperience.map((data, index) => {
             return (
               <div
                 key={index}
-                className="border mb-10 lg:mb-12 xl:mb-20 px-4 rounded-xl bg-gray-overlay flex justify-between items-center py-6 md:py-10"
+                className="home-icon-btn mb-10 lg:mb-12 xl:mb-16 px-4 rounded-xl flex justify-between items-center py-6 md:py-10 cursor-pointer"
               >
                 <div className="">
                   <div className="text-[18px] xl:text-[22px] font-semibold">
@@ -102,15 +92,15 @@ const WorkAndResume = () => {
           })}
         </div>
         {/* Software Skills Section */}
-        <div className="lg:w-[50%] py-4">
-          <div className="py-6 text-[#ff014f]  mb-8  scale-100 hover:scale-105 duration-200 cursor-pointer text-[22px] md:text-[30px] xl:text-[40px] font-semibold ">
+        <div className="lg:w-[50%] w-full py-4">
+          <h2 className="py-6  mb-8 cursor-pointer text-[22px] md:text-[30px] xl:text-[40px] font-semibold ">
             Software Skills
-          </div>
+          </h2>
           {softwareSkills.map((item, index) => {
             return (
               <div
                 key={index}
-                className="border cursor-pointer px-4 mb-6 rounded-xl bg-gray-overlay items-center py-4"
+                className="home-icon-btn cursor-pointer px-4 mb-6 rounded-xl bg-gray-overlay items-center py-4"
               >
                 <div className="flex py-2 items-center justify-between">
                   <div className="text-[16px] md:text-[20px]">
