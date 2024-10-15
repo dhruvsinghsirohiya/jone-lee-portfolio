@@ -34,16 +34,10 @@ const Navbar = () => {
           <a href="#clients">Clients</a>
         </li>
         <li className="hover:text-white cursor-pointer duration-200">
-          <a href="#pricing">Pricing</a>
-        </li>
-        <li className="hover:text-white cursor-pointer duration-200">
           <a href="#blog">Blog</a>
         </li>
         <li className="hover:text-white cursor-pointer duration-200">
           <a href="#contact">Contact</a>
-        </li>
-        <li className="buy-btn text-[#ff014f] rounded-md px-4 cursor-pointer duration-700 hover:shadow-xl py-4 shadow-md">
-          Buy Now
         </li>
       </ul>
       {/* Mobile Device */}
@@ -92,12 +86,6 @@ const Navbar = () => {
           onClick={handleToggle}
           className="cursor-pointer font-bold duration-200"
         >
-          <a href="#pricing">Pricing</a>
-        </li>
-        <li
-          onClick={handleToggle}
-          className="cursor-pointer font-bold duration-200"
-        >
           <a href="#blog">Blog</a>
         </li>
         <li
@@ -105,12 +93,6 @@ const Navbar = () => {
           className="cursor-pointer font-bold duration-200"
         >
           <a href="#contact">Contact</a>
-        </li>
-        <li
-          onClick={handleToggle}
-          className="buy-btn text-[#ff014f] rounded-md px-4 cursor-pointer duration-700 hover:shadow-xl py-4 shadow-md"
-        >
-          Buy Now
         </li>
       </ul>
       <FaBars
