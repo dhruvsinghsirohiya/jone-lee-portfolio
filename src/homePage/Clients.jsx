@@ -78,9 +78,9 @@ const Clients = () => {
       <h1 className="text-2xl md:text-[40px] text-center md:text-left lg:leading-[70px] py-2 lg:py-0 lg:text-[60px] font-[700] text-[#c4cfde]">
         Awesome Clients
       </h1>
-      <div className="md:flex justify-between">
+      <div className="md:flex w-full justify-between">
         <div className="md:w-1/4 w-full py-2 md:py-8">
-          <ul className="flex flex-col">
+          <ul className="flex items-center md:items-start flex-col">
             <li
               onClick={() => setSelectedCategory("All")}
               className={`py-4 md:pt-2  text-center md:text-left md:ps-4 text-[16px] xl:text-xl font-medium cursor-pointer ${
@@ -103,11 +103,6 @@ const Clients = () => {
           </ul>
         </div>
         <div className="w-full md:w-3/4 py-4 md:py-8">
-          <h1 className="w-full text-[20px] text-center md:text-left md:text-[25px] lg:text-4xl font-bold mb-10 md:mb-4">
-            {selectedCategory === "All"
-              ? "All Clients"
-              : selectedCategory + " Clients"}
-          </h1>
           <div className="w-full py-4 md:py-8 md:flex flex-wrap gap-4 lg:gap-6">
             {filteredClients.map((client, index) => (
               <div
